@@ -6,8 +6,11 @@ on:
     branches: [master]
 
 jobs:
-  version:
+  update-version:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    if: ${{startsWith(github.event.head_commit.message, 'fix') || startsWith(github.event.head_commit.message, 'feat') || contains(github.event.head_commit.message, 'BREAKING CHANGE') || contains(github.event.head_commit.message, '!')}}
     steps:
       - uses: actions/checkout@main
         with:
