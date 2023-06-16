@@ -1,0 +1,31 @@
+# This is a workflow that automatically increments the project's version
+name: Version increment
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN}}
+
+      - run: git config --global user.name 'GitHub Actions'
+      - run: git config --global user.email '${{secrets.USER_EMAIL}}'
+
+      - name: 'condition 1'
+        if: ${{startsWith(github.event.head_commit.message, 'fix')}}
+        run: npm version patch -m 'increment PATCH version to %s'
+
+      - name: 'condition 2'
+        if: ${{startsWith(github.event.head_commit.message, 'feat')}}
+        run: npm version minor -m 'increment MINOR version to %s'
+
+      - name: 'condition 3'
+        if: ${{contains(github.event.head_commit.message, 'BREAKING CHANGE') || contains(github.event.head_commit.message, '!')}}
+        run: npm version major -m 'increment MAJOR version to %s'
+
+      - run: git push
