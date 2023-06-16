@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    if: ${{startsWith(github.event.commits.message, 'fix') || startsWith(github.event.commits.message, 'feat') || contains(github.event.commits.message, 'BREAKING CHANGE') || contains(github.event.commits.message, '!')}}
+    if: ${{contains(github.event.head_commit.message, 'fix:') || contains(github.event.head_commit.message, 'feat:') || contains(github.event.head_commit.message, '!')}}
     steps:
       - uses: actions/checkout@main
         with:
@@ -20,15 +20,15 @@ jobs:
       - run: git config --global user.email '${{secrets.USER_EMAIL}}'
 
       - name: 'condition 1'
-        if: ${{startsWith(github.event.commits.message, 'fix')}}
+        if: ${{contains(github.event.head_commit.message, 'fix:')}}
         run: npm version patch -m 'increment PATCH version to %s'
 
       - name: 'condition 2'
-        if: ${{startsWith(github.event.commits.message, 'feat')}}
+        if: ${{contains(github.event.head_commit.message, 'feat:')}}
         run: npm version minor -m 'increment MINOR version to %s'
 
       - name: 'condition 3'
-        if: ${{contains(github.event.commits.message, 'BREAKING CHANGE') || contains(github.event.commits.message, '!')}}
+        if: ${{contains(github.event.head_commit.message, '!')}}
         run: npm version major -m 'increment MAJOR version to %s'
 
       - run: git push
