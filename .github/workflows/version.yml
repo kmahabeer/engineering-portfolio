@@ -24,14 +24,14 @@ jobs:
 
       - name: 'condition 1'
         if: ${{contains(github.event.head_commit.message, 'fix:')}}
-        run: npm version patch -m 'increment PATCH version to %s'
+        run: npm version patch -m '[v%s] increment PATCH version number'
 
       - name: 'condition 2'
         if: ${{contains(github.event.head_commit.message, 'feat:')}}
-        run: npm version minor -m 'increment MINOR version to %s'
+        run: npm version minor -m '[v%s] increment MINOR version number'
 
       - name: 'condition 3'
         if: ${{contains(github.event.head_commit.message, '!')}}
-        run: npm version major -m 'increment MAJOR version to %s'
+        run: npm version major -m '[v%s] increment MAJOR version number'
 
       - run: git push
