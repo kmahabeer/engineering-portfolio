@@ -14,7 +14,7 @@ export const Navbar = () => {
 				</div>
 
 				<div>
-					<ul className='flex-none menu menu-horizontal py-3 md:py-5 text-lg'>
+					<ul className='flex-none menu menu-horizontal py-3 md:py-5 text-lg font-semibold'>
 						<li>
 							<Link href={'/projects'}>Projects</Link>
 						</li>
