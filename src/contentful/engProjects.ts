@@ -9,7 +9,7 @@ type EngProjectEntry = Entry<
 	string
 >;
 
-interface EngProject {
+export interface EngProject {
 	title: string;
 	slug: string;
 }
