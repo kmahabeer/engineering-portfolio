@@ -12,6 +12,8 @@ type EngProjectEntry = Entry<
 export interface EngProject {
 	title: string;
 	slug: string;
+	publishedDate?: string;
+	content?: RichTextDocument;
 }
 
 export function parseContentfulEngProject(
@@ -23,6 +25,8 @@ export function parseContentfulEngProject(
 	return {
 		title: engProjectEntry.fields.title || '',
 		slug: engProjectEntry.fields.slug,
+		publishedDate: engProjectEntry.fields.publishedDate,
+		content: engProjectEntry.fields.content,
 	};
 }
 

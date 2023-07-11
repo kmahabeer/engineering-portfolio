@@ -7,6 +7,7 @@ const page = async () => {
 	const engPosts = await fetchEngProjects({ preview: draftMode().isEnabled });
 
 	return (
+		<div className='px-4 mx-auto lg:max-w-7xl'>
 		<section className='flex justify-between items-center flex-col lg:px-20 py-6 px-5 mb-16'>
 			<section className='grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 mt-10 w-full'>
 				{engPosts.map((engPost) => {
@@ -21,6 +22,7 @@ const page = async () => {
 				})}
 			</section>
 		</section>
+		</div>
 	);
 };
 
