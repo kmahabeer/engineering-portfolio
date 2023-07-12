@@ -12,7 +12,7 @@
         "id": "engineeringProjects",
         "type": "ContentType",
         "createdAt": "2023-06-14T02:14:05.151Z",
-        "updatedAt": "2023-06-14T02:57:01.285Z",
+        "updatedAt": "2023-07-12T15:12:44.325Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -20,8 +20,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 9,
-        "publishedAt": "2023-06-14T02:57:01.285Z",
+        "publishedVersion": 21,
+        "publishedAt": "2023-07-12T15:12:44.325Z",
         "firstPublishedAt": "2023-06-14T02:14:05.442Z",
         "createdBy": {
           "sys": {
@@ -37,8 +37,8 @@
             "id": "6yiIHt2oEgghnxx1BqH8QG"
           }
         },
-        "publishedCounter": 5,
-        "version": 10,
+        "publishedCounter": 11,
+        "version": 22,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -94,6 +94,17 @@
           "omitted": false
         },
         {
+          "id": "thumbnail",
+          "name": "Thumbnail",
+          "type": "Object",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
           "id": "content",
           "name": "Content",
           "type": "RichText",
@@ -127,9 +138,11 @@
                 "hyperlink",
                 "entry-hyperlink",
                 "asset-hyperlink",
-                "embedded-entry-inline"
+                "embedded-entry-inline",
+                "heading-2",
+                "heading-1"
               ],
-              "message": "Only heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+              "message": "Only heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, inline entry, heading 2, and heading 1 nodes are allowed"
             },
             {
               "nodes": {
@@ -689,6 +702,92 @@
           "omitted": false
         }
       ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "licmfju41ya5"
+          }
+        },
+        "id": "image",
+        "type": "ContentType",
+        "createdAt": "2023-07-12T15:39:59.869Z",
+        "updatedAt": "2023-07-12T15:40:14.927Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-07-12T15:40:14.927Z",
+        "firstPublishedAt": "2023-07-12T15:40:00.080Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yiIHt2oEgghnxx1BqH8QG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yiIHt2oEgghnxx1BqH8QG"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yiIHt2oEgghnxx1BqH8QG"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Image",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cloudinaryImage",
+          "name": "Cloudinary Image",
+          "type": "Object",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
     }
   ],
   "tags": [
@@ -705,7 +804,7 @@
             "linkType": "Space"
           }
         },
-        "version": 10,
+        "version": 22,
         "createdAt": "2023-06-14T02:14:05.569Z",
         "createdBy": {
           "sys": {
@@ -714,7 +813,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2023-06-14T02:57:01.733Z",
+        "updatedAt": "2023-07-12T15:12:44.795Z",
         "updatedBy": {
           "sys": {
             "id": "6yiIHt2oEgghnxx1BqH8QG",
@@ -753,10 +852,14 @@
       ],
       "sidebar": [
         {
+          "settings": {
+          },
           "widgetId": "publication-widget",
           "widgetNamespace": "sidebar-builtin"
         },
         {
+          "settings": {
+          },
           "widgetId": "content-preview-widget",
           "widgetNamespace": "sidebar-builtin"
         },
@@ -792,6 +895,11 @@
           },
           "widgetId": "datePicker",
           "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "thumbnail",
+          "widgetId": "zjcnWgBknf9zB7IM9HZjE",
+          "widgetNamespace": "app"
         },
         {
           "fieldId": "content",
@@ -1217,6 +1325,105 @@
           "widgetNamespace": "builtin"
         }
       ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "licmfju41ya5",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2023-07-12T15:40:00.241Z",
+        "createdBy": {
+          "sys": {
+            "id": "6yiIHt2oEgghnxx1BqH8QG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-07-12T15:40:15.372Z",
+        "updatedBy": {
+          "sys": {
+            "id": "6yiIHt2oEgghnxx1BqH8QG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "image",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "sidebar": [
+        {
+          "settings": {
+          },
+          "widgetId": "703nAvCC2nuDjQCiI5P8e2",
+          "widgetNamespace": "app"
+        },
+        {
+          "settings": {
+          },
+          "widgetId": "publication-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "settings": {
+          },
+          "widgetId": "content-preview-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "settings": {
+          },
+          "widgetId": "incoming-links-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "settings": {
+          },
+          "widgetId": "translation-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "settings": {
+          },
+          "widgetId": "versions-widget",
+          "widgetNamespace": "sidebar-builtin"
+        }
+      ],
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "cloudinaryImage",
+          "widgetId": "zjcnWgBknf9zB7IM9HZjE",
+          "widgetNamespace": "app"
+        }
+      ]
     }
   ],
   "entries": [
@@ -1236,7 +1443,7 @@
         "id": "4PHCXDS1IJltSacr3Hlht3",
         "type": "Entry",
         "createdAt": "2023-06-14T02:14:13.623Z",
-        "updatedAt": "2023-06-14T14:21:48.294Z",
+        "updatedAt": "2023-07-12T15:45:49.492Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1244,8 +1451,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 8,
-        "publishedAt": "2023-06-14T02:25:50.338Z",
+        "publishedVersion": 197,
+        "publishedAt": "2023-07-12T15:45:49.492Z",
         "firstPublishedAt": "2023-06-14T02:25:50.338Z",
         "createdBy": {
           "sys": {
@@ -1261,8 +1468,8 @@
             "id": "6yiIHt2oEgghnxx1BqH8QG"
           }
         },
-        "publishedCounter": 1,
-        "version": 13,
+        "publishedCounter": 21,
+        "version": 198,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1282,10 +1489,653 @@
       },
       "fields": {
         "title": {
-          "en-US": "Mixed media artwork"
+          "en-US": "First Engineering Project"
         },
         "slug": {
           "en-US": "mixed-media-artwork"
+        },
+        "publishedDate": {
+          "en-US": "2023-07-12"
+        },
+        "content": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Paulum, cum regem Persem captum adduceret, eodem flumine invectio? Superiores tres erant, quae esse possent, quarum est una sola defensa, eaque vehementer. Nam illud vehementer repugnat, eundem beatum esse et multis malis oppressum. Simul atque natum animal est, gaudet voluptate et eam appetit ut bonum, aspernatur dolorem ut malum. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit;",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://www.google.com/"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Google",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "This is where an image will go:",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "6hb8aKBLS3SlYqFoHksPHx",
+                      "type": "Link",
+                      "linkType": "Entry"
+                    }
+                  }
+                },
+                "content": [
+                ],
+                "nodeType": "embedded-entry-block"
+              },
+              {
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "2XOKbZ4ZBHru8SsSdobgUW",
+                      "type": "Link",
+                      "linkType": "Entry"
+                    }
+                  }
+                },
+                "content": [
+                ],
+                "nodeType": "embedded-entry-block"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                ],
+                "nodeType": "hr"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "This is a heading 2",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-2"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Duo Reges: constructio interrete. Bonum liberi: misera orbitas. At enim, qua in vita est aliquid mali, ea beata esse non potest. Itaque ad tempus ad Pisonem omnes. Quis est tam dissimile homini.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "This is a heading 3",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-3"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Inline entry to a tag using embed: ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "target": {
+                        "sys": {
+                          "id": "6Z0QRfLmFERYVHlzN4WJrM",
+                          "type": "Link",
+                          "linkType": "Entry"
+                        }
+                      }
+                    },
+                    "content": [
+                    ],
+                    "nodeType": "embedded-entry-inline"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Inline entry to a project using embed: ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "target": {
+                        "sys": {
+                          "id": "2ED3CqtoIaA07gznnGUbnd",
+                          "type": "Link",
+                          "linkType": "Entry"
+                        }
+                      }
+                    },
+                    "content": [
+                    ],
+                    "nodeType": "embedded-entry-inline"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "This is a heading 3",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-3"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Inline entry to a tag using hyperlink: ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "target": {
+                        "sys": {
+                          "id": "6Z0QRfLmFERYVHlzN4WJrM",
+                          "type": "Link",
+                          "linkType": "Entry"
+                        }
+                      }
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Python",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "entry-hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Inline entry to a project using hyperlink: ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "target": {
+                        "sys": {
+                          "id": "2ED3CqtoIaA07gznnGUbnd",
+                          "type": "Link",
+                          "linkType": "Entry"
+                        }
+                      }
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Second engineering post",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "entry-hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " (Works)",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "This is a heading 2",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-2"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "The following is code:",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "value": "console.log(\"Hello World\");\nconst name = \"Joe\";\nconsole.log(\"Joe\");",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "\n\tQuod idem cum vestri faciant, non satis magnam tribuunt inventoribus gratiam.\n",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "paragraph"
+                  }
+                ],
+                "nodeType": "blockquote"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "This is a heading 3",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-3"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "An potest, inquit ille, quicquam esse suavius quam nihil dolere?",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "At vero illa, quae Peripatetici, quae Stoici dicunt, semper tibi in ore sunt in iudiciis, in senatu.",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  }
+                ],
+                "nodeType": "unordered-list"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "Aliis esse maiora",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ", ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "illud dubium",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ", ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "underline"
+                      }
+                    ],
+                    "value": "ad id",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ", quod summum bonum dicitis, ecquaenam possit fieri accessio. Cur igitur, cum de re conveniat, non malumus usitate loqui? Nondum autem explanatum satis, erat, quid maxime natura vellet. Bonum incolumis acies: misera caecitas.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "2ED3CqtoIaA07gznnGUbnd",
+                      "type": "Link",
+                      "linkType": "Entry"
+                    }
+                  }
+                },
+                "content": [
+                ],
+                "nodeType": "embedded-entry-block"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "This is a heading 3",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-3"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Ego vero isti, inquam, permitto. Quae diligentissime contra Aristonem dicuntur a Chryippo. Ille vero, si insipiens-quo certe, quoniam tyrannus -, numquam beatus; Immo alio genere;",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "This is a heading 2",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-2"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Other entries to check out:",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "7bFhw5pnDBxwqkDjn2QYLm",
+                      "type": "Link",
+                      "linkType": "Entry"
+                    }
+                  }
+                },
+                "content": [
+                ],
+                "nodeType": "embedded-entry-block"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
         }
       }
     },
@@ -1305,7 +2155,7 @@
         "id": "2ED3CqtoIaA07gznnGUbnd",
         "type": "Entry",
         "createdAt": "2023-06-14T02:27:18.777Z",
-        "updatedAt": "2023-06-14T02:31:02.355Z",
+        "updatedAt": "2023-07-11T14:11:47.235Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1313,8 +2163,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 4,
-        "publishedAt": "2023-06-14T02:31:02.355Z",
+        "publishedVersion": 6,
+        "publishedAt": "2023-07-11T14:11:47.235Z",
         "firstPublishedAt": "2023-06-14T02:27:24.374Z",
         "createdBy": {
           "sys": {
@@ -1330,8 +2180,8 @@
             "id": "6yiIHt2oEgghnxx1BqH8QG"
           }
         },
-        "publishedCounter": 2,
-        "version": 5,
+        "publishedCounter": 3,
+        "version": 7,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1351,7 +2201,7 @@
       },
       "fields": {
         "title": {
-          "en-US": "Second entry"
+          "en-US": "Second Engineering Project"
         },
         "slug": {
           "en-US": "second-entry"
@@ -1421,6 +2271,364 @@
       "fields": {
         "tagName": {
           "en-US": "Python"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "licmfju41ya5"
+          }
+        },
+        "id": "7bFhw5pnDBxwqkDjn2QYLm",
+        "type": "Entry",
+        "createdAt": "2023-07-11T14:06:08.769Z",
+        "updatedAt": "2023-07-11T14:12:02.468Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2023-07-11T14:12:02.468Z",
+        "firstPublishedAt": "2023-07-11T14:06:50.582Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yiIHt2oEgghnxx1BqH8QG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yiIHt2oEgghnxx1BqH8QG"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yiIHt2oEgghnxx1BqH8QG"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "engineeringProjects"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Third Engineering Project"
+        },
+        "slug": {
+          "en-US": "third-entry"
+        },
+        "publishedDate": {
+          "en-US": "2023-07-11"
+        },
+        "content": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Ain't that something?",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "tags": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6Z0QRfLmFERYVHlzN4WJrM"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "licmfju41ya5"
+          }
+        },
+        "id": "5IwByEwc5W2yrf6h1DEx9N",
+        "type": "Entry",
+        "createdAt": "2023-07-11T16:03:31.448Z",
+        "updatedAt": "2023-07-11T16:03:41.784Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-07-11T16:03:41.784Z",
+        "firstPublishedAt": "2023-07-11T16:03:41.784Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yiIHt2oEgghnxx1BqH8QG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yiIHt2oEgghnxx1BqH8QG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yiIHt2oEgghnxx1BqH8QG"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "engineeringProjects"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Just to mess things up eng"
+        },
+        "slug": {
+          "en-US": "just-to-mess-things-up-eng"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "licmfju41ya5"
+          }
+        },
+        "id": "6hb8aKBLS3SlYqFoHksPHx",
+        "type": "Entry",
+        "createdAt": "2023-07-12T15:42:37.277Z",
+        "updatedAt": "2023-07-12T15:43:32.454Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-07-12T15:43:32.454Z",
+        "firstPublishedAt": "2023-07-12T15:43:32.454Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yiIHt2oEgghnxx1BqH8QG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yiIHt2oEgghnxx1BqH8QG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yiIHt2oEgghnxx1BqH8QG"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "image"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Sample Image 1"
+        },
+        "cloudinaryImage": {
+          "en-US": [
+            {
+              "url": "http://res.cloudinary.com/dnvopdrgi/image/upload/f_auto/q_auto:best/v1682710250/samples/landscapes/architecture-signs.jpg",
+              "tags": [
+              ],
+              "type": "upload",
+              "bytes": 945255,
+              "width": 3000,
+              "format": "jpg",
+              "height": 2000,
+              "version": 1682710250,
+              "duration": null,
+              "metadata": [
+              ],
+              "public_id": "samples/landscapes/architecture-signs",
+              "created_at": "2023-04-28T19:30:50Z",
+              "secure_url": "https://res.cloudinary.com/dnvopdrgi/image/upload/f_auto/q_auto:best/v1682710250/samples/landscapes/architecture-signs.jpg",
+              "resource_type": "image",
+              "original_url": "http://res.cloudinary.com/dnvopdrgi/image/upload/v1682710250/samples/landscapes/architecture-signs.jpg",
+              "original_secure_url": "https://res.cloudinary.com/dnvopdrgi/image/upload/v1682710250/samples/landscapes/architecture-signs.jpg",
+              "raw_transformation": "f_auto/q_auto:best"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "licmfju41ya5"
+          }
+        },
+        "id": "2XOKbZ4ZBHru8SsSdobgUW",
+        "type": "Entry",
+        "createdAt": "2023-07-12T15:44:34.053Z",
+        "updatedAt": "2023-07-12T15:44:52.318Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-07-12T15:44:52.318Z",
+        "firstPublishedAt": "2023-07-12T15:44:52.318Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yiIHt2oEgghnxx1BqH8QG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yiIHt2oEgghnxx1BqH8QG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "6yiIHt2oEgghnxx1BqH8QG"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "image"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Sample Image 2"
+        },
+        "cloudinaryImage": {
+          "en-US": [
+            {
+              "url": "http://res.cloudinary.com/dnvopdrgi/image/upload/f_auto/q_auto:best/v1682710268/cld-sample-4.jpg",
+              "tags": [
+              ],
+              "type": "upload",
+              "bytes": 818600,
+              "width": 1870,
+              "format": "jpg",
+              "height": 1250,
+              "version": 1682710268,
+              "duration": null,
+              "metadata": [
+              ],
+              "public_id": "cld-sample-4",
+              "created_at": "2023-04-28T19:31:08Z",
+              "secure_url": "https://res.cloudinary.com/dnvopdrgi/image/upload/f_auto/q_auto:best/v1682710268/cld-sample-4.jpg",
+              "resource_type": "image",
+              "original_url": "http://res.cloudinary.com/dnvopdrgi/image/upload/v1682710268/cld-sample-4.jpg",
+              "original_secure_url": "https://res.cloudinary.com/dnvopdrgi/image/upload/v1682710268/cld-sample-4.jpg",
+              "raw_transformation": "f_auto/q_auto:best"
+            }
+          ]
         }
       }
     }

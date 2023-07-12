@@ -6,6 +6,7 @@ export interface TypeEngineeringProjectsFields {
     title: EntryFieldTypes.Symbol;
     slug: EntryFieldTypes.Symbol;
     publishedDate?: EntryFieldTypes.Date;
+    thumbnail?: EntryFieldTypes.Object;
     content?: EntryFieldTypes.RichText;
     tags?: EntryFieldTypes.Array<EntryFieldTypes.EntryLink<TypeTagSkeleton>>;
     seoFields?: EntryFieldTypes.EntryLink<TypeSeoSkeleton>;
