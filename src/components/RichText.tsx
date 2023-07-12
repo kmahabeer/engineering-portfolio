@@ -6,6 +6,7 @@ import {
 } from '@contentful/rich-text-types';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import Link from 'next/link';
+import CloudinaryImage from './CloudinaryImage';
 
 type RichTextProps = {
 	document: RichTextDocument | undefined | null;
@@ -56,6 +57,20 @@ const options = {
 					{text}
 				</a>
 			);
+		},
+		[BLOCKS.EMBEDDED_ENTRY]: (node: any) => {
+			if (node.data.target.sys.contentType.sys.id === 'image') {
+				return (
+					<CloudinaryImage
+						alt={'some image'}
+						src={node.data.target.fields.cloudinaryImage[0].url.toString()}
+						width={1280}
+						height={720}
+						crop='thumb'
+						format='webp'
+					/>
+				);
+			}
 		},
 	},
 };
