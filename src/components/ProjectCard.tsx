@@ -19,7 +19,6 @@ const ProjectCard = async ({ title, slug }: EngProjectProps) => {
 		const { TEMP_COVER_IMAGE } = process.env;
 		thumbnailUrl = TEMP_COVER_IMAGE;
 	}
-	console.log(thumbnailUrl);
 
 	return (
 		<div className='flex justify-center items-center flex-col rounded-xl drop-shadow'>
