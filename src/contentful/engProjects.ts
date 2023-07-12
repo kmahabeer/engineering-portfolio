@@ -14,6 +14,7 @@ export interface EngProject {
 	slug: string;
 	publishedDate?: string;
 	content?: RichTextDocument;
+	thumbnail?: any;
 }
 
 export function parseContentfulEngProject(
@@ -27,6 +28,7 @@ export function parseContentfulEngProject(
 		slug: engProjectEntry.fields.slug,
 		publishedDate: engProjectEntry.fields.publishedDate,
 		content: engProjectEntry.fields.content,
+		thumbnail: engProjectEntry.fields.thumbnail,
 	};
 }
 

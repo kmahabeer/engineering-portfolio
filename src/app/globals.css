@@ -29,5 +29,5 @@ body {
 
 /* Project Card */
 .project_card-title {
-  @apply justify-end items-end w-full h-1/3 bg-gradient-to-b from-transparent to-black/50 rounded-b-2xl gap-2 absolute bottom-0 right-0 text-base text-white p-4;
+  @apply justify-end items-end w-full h-3/4 bg-gradient-to-b from-transparent to-black/75 rounded-b gap-2 absolute bottom-0 right-0 text-base text-white p-4;
 }

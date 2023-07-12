@@ -1,22 +1,36 @@
-import { EngProject } from '@/contentful/engProjects';
+import { EngProject, fetchEngProject } from '@/contentful/engProjects';
 import Link from 'next/link';
-import Image from 'next/image';
+import { draftMode } from 'next/dist/client/components/headers';
+import CloudinaryImage from './CloudinaryImage';
 
 export interface EngProjectProps extends EngProject {
 	image: string;
 }
 
-const ProjectCard = ({ title, slug, image }: EngProjectProps) => {
+const ProjectCard = async ({ title, slug }: EngProjectProps) => {
+	const engPost = await fetchEngProject({
+		slug: slug,
+		preview: draftMode().isEnabled,
+	});
+	let thumbnailUrl: any = '';
+	if (engPost?.thumbnail !== undefined) {
+		thumbnailUrl = engPost?.thumbnail[0].url;
+	} else {
+		const { TEMP_COVER_IMAGE } = process.env;
+		thumbnailUrl = TEMP_COVER_IMAGE;
+	}
+	console.log(thumbnailUrl);
+
 	return (
 		<div className='flex justify-center items-center flex-col rounded-xl drop-shadow'>
 			<Link
 				href={`/projects/${slug}`}
 				className='flex justify-center items-center group relative w-full h-full'
 			>
-				<Image
-					src={image}
-					alt='Project image'
-					width={300}
+				<CloudinaryImage
+					src={thumbnailUrl}
+					alt={'Project image'}
+					width={400}
 					height={200}
 					className='w-full h-full object-cover rounded-xl'
 				/>
