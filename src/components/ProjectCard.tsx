@@ -3,11 +3,7 @@ import Link from 'next/link';
 import { draftMode } from 'next/dist/client/components/headers';
 import CloudinaryImage from './CloudinaryImage';
 
-export interface EngProjectProps extends EngProject {
-	image: string;
-}
-
-const ProjectCard = async ({ title, slug }: EngProjectProps) => {
+const ProjectCard = async ({ title, slug }: EngProject) => {
 	const engPost = await fetchEngProject({
 		slug: slug,
 		preview: draftMode().isEnabled,
@@ -21,23 +17,23 @@ const ProjectCard = async ({ title, slug }: EngProjectProps) => {
 	}
 
 	return (
-		<div className='flex justify-center items-center flex-col rounded-xl drop-shadow'>
+		<>
 			<Link
 				href={`/projects/${slug}`}
 				className='flex justify-center items-center group relative w-full h-full'
 			>
 				<CloudinaryImage
 					src={thumbnailUrl}
-					alt={'Project image'}
+					alt={'Cover image for project entitled ' + title}
 					width={400}
 					height={200}
-					className='w-full h-full object-cover rounded-xl'
+					className='w-full h-full object-cover'
 				/>
 				<div className='hidden group-hover:flex project_card-title '>
 					<p className='w-full'>{title}</p>
 				</div>
 			</Link>
-		</div>
+		</>
 	);
 };
 
