@@ -1,4 +1,4 @@
-import { fetchEngProject } from '@/contentful/engProjects';
+import { fetchEngProject } from '@/utils';
 import { draftMode } from 'next/dist/client/components/headers';
 import { RichText } from '@/components';
 

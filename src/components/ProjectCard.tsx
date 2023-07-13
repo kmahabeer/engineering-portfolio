@@ -1,4 +1,4 @@
-import { EngProject, fetchEngProject } from '@/contentful/engProjects';
+import { EngProject, fetchEngProject } from '@/utils';
 import Link from 'next/link';
 import { draftMode } from 'next/dist/client/components/headers';
 import CloudinaryImage from './CloudinaryImage';
