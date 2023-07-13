@@ -1,7 +1,8 @@
-import React from 'react';
 import Link from 'next/link';
 
 export const Navbar = () => {
+	const { RESUME_URL } = process.env;
+
 	return (
 		<nav className='w-full bg-black sticky top-0 left-0 right-0 z-10'>
 			<div className='justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8'>
@@ -19,7 +20,9 @@ export const Navbar = () => {
 							<Link href={'/projects'}>Projects</Link>
 						</li>
 						<li>
-							<Link href={'/resume'}>Resume</Link>
+							<a href={RESUME_URL} target='_blank' rel='noopener noreferrer'>
+								Resume
+							</a>
 						</li>
 						<li>
 							<Link href={'/about'}>About</Link>
