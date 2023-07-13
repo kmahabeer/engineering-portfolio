@@ -1,7 +1,6 @@
 import { fetchEngProject } from '@/contentful/engProjects';
 import { draftMode } from 'next/dist/client/components/headers';
-import React from 'react';
-import RichText from '@/components/RichText';
+import { RichText } from '@/components';
 
 const page = async ({ params }: { params: { slug: string } }) => {
 	const engPost = await fetchEngProject({
