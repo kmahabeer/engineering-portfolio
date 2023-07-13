@@ -1,7 +1,6 @@
-import React from 'react';
-import { fetchEngProjects } from '@/contentful/engProjects';
+import { fetchEngProjects } from '@/utils';
 import { draftMode } from 'next/dist/client/components/headers';
-import ProjectCard from '@/components/ProjectCard';
+import { ProjectCard } from '@/components';
 
 const page = async () => {
 	const engPosts = await fetchEngProjects({ preview: draftMode().isEnabled });
