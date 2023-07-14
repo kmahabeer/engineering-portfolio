@@ -13,7 +13,8 @@ import {
 	Toolbar,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import React from 'react';
+import CloseIcon from '@mui/icons-material/Close';
+import React, { useState } from 'react';
 
 interface NavbarLink {
 	isEnabled: boolean;
@@ -38,14 +39,17 @@ const navbarLinks: NavbarLink[] = [
 export const Navbar = () => {
 	const router = useRouter();
 	const [anchorNav, setAnchorNav] = React.useState<null | HTMLElement>(null);
+	const [isOpen, setIsOpen] = useState(false);
 
 	const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+		setIsOpen(true);
 		setAnchorNav(event.currentTarget);
 	};
+
 	const handleCloseNavMenu = () => {
+		setIsOpen(false);
 		setAnchorNav(null);
 	};
-	const createButton = () => {};
 
 	const handleClickSelect = (href: string) => () => {
 		router.push(href);
@@ -73,7 +77,7 @@ export const Navbar = () => {
 							size='large'
 							color='inherit'
 						>
-							<MenuIcon />
+							{isOpen ? <CloseIcon /> : <MenuIcon />}
 						</IconButton>
 						<Menu
 							anchorEl={anchorNav}
@@ -87,6 +91,20 @@ export const Navbar = () => {
 							{navbarLinks.map((navbarLink, index) => {
 								if (!navbarLink.isEnabled) {
 									return null;
+								}
+								if (navbarLink.isExternal) {
+									return (
+										<a
+											href={navbarLink.href}
+											key={index}
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											<MenuItem onClick={handleCloseNavMenu}>
+												{navbarLink.label}
+											</MenuItem>
+										</a>
+									);
 								}
 								return (
 									<MenuItem
