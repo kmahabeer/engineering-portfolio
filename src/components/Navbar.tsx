@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import {
 	AppBar,
 	Box,
@@ -35,18 +36,19 @@ const navbarLinks: NavbarLink[] = [
 // import { navbarLinks } from '@/utils';
 
 export const Navbar = () => {
+	const router = useRouter();
 	const [anchorNav, setAnchorNav] = React.useState<null | HTMLElement>(null);
+
 	const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-		console.log('click to open');
 		setAnchorNav(event.currentTarget);
 	};
 	const handleCloseNavMenu = () => {
-		console.log('click to close');
 		setAnchorNav(null);
 	};
 	const createButton = () => {};
-	const handleNavMenuItemClick = (e: React.MouseEvent) => {
-		console.log(`clicked: `, e.currentTarget.nodeValue);
+
+	const handleClickSelect = (href: string) => () => {
+		router.push(href);
 		handleCloseNavMenu();
 	};
 
@@ -56,11 +58,7 @@ export const Navbar = () => {
 				<Toolbar disableGutters>
 					<Box sx={{ flexGrow: 1 }}>
 						<Link href={'/'} passHref>
-							<Button
-								variant={'text'}
-								// className='normal-case text-2xl font-bold'
-								color={'primary'}
-							>
+							<Button variant={'text'} color={'primary'}>
 								Kevin Mahabeer
 							</Button>
 						</Link>
@@ -91,9 +89,12 @@ export const Navbar = () => {
 									return null;
 								}
 								return (
-									<Link key={index} href={navbarLink.href} passHref>
-										<MenuItem>{navbarLink.label}</MenuItem>
-									</Link>
+									<MenuItem
+										key={index}
+										onClick={handleClickSelect(navbarLink.href)}
+									>
+										{navbarLink.label}
+									</MenuItem>
 								);
 							})}
 						</Menu>
@@ -105,7 +106,6 @@ export const Navbar = () => {
 								if (!navbarLink.isEnabled) {
 									return null;
 								}
-
 								if (navbarLink.isExternal) {
 									return (
 										<a
@@ -124,17 +124,15 @@ export const Navbar = () => {
 										</a>
 									);
 								}
-
 								return (
-									<Link href={navbarLink.href} passHref key={index}>
-										<Button
-											onClick={handleCloseNavMenu}
-											variant='text'
-											sx={{ my: 2, color: 'white', display: 'block' }}
-										>
-											{navbarLink.label}
-										</Button>
-									</Link>
+									<Button
+										key={index}
+										onClick={handleClickSelect(navbarLink.href)}
+										variant='text'
+										sx={{ my: 2, color: 'white', display: 'block' }}
+									>
+										{navbarLink.label}
+									</Button>
 								);
 							})}
 						</Stack>
