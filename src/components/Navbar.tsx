@@ -14,24 +14,23 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import React from 'react';
 
-const navbarLinks = ['Projects', 'Resume', 'About'];
 interface NavbarLink {
-	isEnable: boolean;
+	isEnabled: boolean;
 	label: string;
 	href: string;
 	isExternal?: boolean;
 }
 
-const navbarLinks2: NavbarLink[] = [
-	{ isEnable: true, label: 'Projects', href: '/projects' },
+const navbarLinks: NavbarLink[] = [
+	{ isEnabled: true, label: 'Projects', href: '/projects' },
 	{
-		isEnable: true,
+		isEnabled: true,
 		label: 'Resume',
 		href: 'https://drive.google.com/file/d/19EI6FfAlTuPpyAP42oGtEaKpmdCJSxk6/view?usp=sharing',
 		isExternal: true,
 	},
-	{ isEnable: true, label: 'About', href: '/about' },
-	{ isEnable: false, label: 'Contact', href: '/contact' },
+	{ isEnabled: false, label: 'About', href: '/about' },
+	{ isEnabled: false, label: 'Contact', href: '/contact' },
 ];
 // import { navbarLinks } from '@/utils';
 
@@ -59,7 +58,7 @@ export const Navbar = () => {
 						<Link href={'/'} passHref>
 							<Button
 								variant={'text'}
-								className='normal-case text-2xl font-bold'
+								// className='normal-case text-2xl font-bold'
 								color={'primary'}
 							>
 								Kevin Mahabeer
@@ -87,19 +86,24 @@ export const Navbar = () => {
 							onClose={handleCloseNavMenu}
 							sx={{ display: { xs: 'block', md: 'none' } }}
 						>
-							{navbarLinks2.map((navbarLink, index) => (
-								<Link key={index} href={navbarLink.href} passHref>
-									<MenuItem key={index}>{navbarLink.label}</MenuItem>
-								</Link>
-							))}
+							{navbarLinks.map((navbarLink, index) => {
+								if (!navbarLink.isEnabled) {
+									return null;
+								}
+								return (
+									<Link key={index} href={navbarLink.href} passHref>
+										<MenuItem>{navbarLink.label}</MenuItem>
+									</Link>
+								);
+							})}
 						</Menu>
 					</Box>
 					{/* Navbar links - stacked horizontally (Desktop + Tablet) */}
 					<Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
 						<Stack direction={'row'} spacing={2}>
-							{navbarLinks2.map((navbarLink, index) => {
-								if (!navbarLink.isEnable) {
-									return null; // Skip rendering if navbarLink is not enabled
+							{navbarLinks.map((navbarLink, index) => {
+								if (!navbarLink.isEnabled) {
+									return null;
 								}
 
 								if (navbarLink.isExternal) {
@@ -111,7 +115,6 @@ export const Navbar = () => {
 											rel='noopener noreferrer'
 										>
 											<Button
-												key={navbarLink.label}
 												onClick={handleCloseNavMenu}
 												variant='text'
 												sx={{ my: 2, color: 'white', display: 'block' }}
@@ -125,7 +128,6 @@ export const Navbar = () => {
 								return (
 									<Link href={navbarLink.href} passHref key={index}>
 										<Button
-											key={navbarLink.label}
 											onClick={handleCloseNavMenu}
 											variant='text'
 											sx={{ my: 2, color: 'white', display: 'block' }}
@@ -137,30 +139,6 @@ export const Navbar = () => {
 							})}
 						</Stack>
 					</Box>
-
-					{/* <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
-						<Stack direction={'row'} spacing={2}>
-							{navbarLinks.map((link, index) =>
-								link.isVisible ? (
-									<Button variant='outlined' color='secondary' key={index}>
-										{link.external ? (
-											<a
-												href={link.href}
-												target={'_blank'}
-												rel={'noopener noreferrer'}
-											>
-												{link.label}
-											</a>
-										) : link.href ? (
-											<Link href={link.href}>{link.label}</Link>
-										) : (
-											<span>{link.label}</span>
-										)}
-									</Button>
-								) : undefined
-							)}
-						</Stack>
-					</Box> */}
 				</Toolbar>
 			</Container>
 		</AppBar>
