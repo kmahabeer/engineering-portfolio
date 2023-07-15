@@ -1,4 +1,5 @@
 import '@/styles/globals.css'
+import { Container } from '@mui/material';
 import { Navbar } from '@/components';
 
 export const metadata = {
@@ -15,7 +16,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className={'relative'}>
 				<Navbar />
-				{children}
+				<Container maxWidth={'lg'}>{children}</Container>
 			</body>
 		</html>
 	);
