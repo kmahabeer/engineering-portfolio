@@ -2,7 +2,7 @@ import { ProjectGallery } from '@/components';
 
 const page = async () => {
 	return (
-		<div className='min-h-screen px-4 mx-auto lg:max-w-6xl'>
+		<div className='md:px-16 mt-8'>
 			<ProjectGallery />
 		</div>
 	);
