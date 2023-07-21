@@ -67,3 +67,8 @@ body {
 		grid-row: span 2 / auto;
 	}
 }
+
+/* Rich text */
+.richtext {
+	@apply prose prose-neutral dark:prose-invert prose-a:text-blue-600 hover:prose-a:text-blue-500;
+}
