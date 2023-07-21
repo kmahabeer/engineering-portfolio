@@ -7,6 +7,7 @@ import {
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import Link from 'next/link';
 import CloudinaryImage from './CloudinaryImage';
+import ProjectCard from './ProjectCard';
 
 type RichTextProps = {
 	document: RichTextDocument | undefined | null;
@@ -69,6 +70,22 @@ const options = {
 						crop='thumb'
 						format='webp'
 					/>
+				);
+			}
+			// unpublished entry: node.data.target.sys.linkType === 'Entry'
+			// published entry: node.data.target.sys.contentType.sys.linkType === 'ContentType'
+			else if (
+				node.data.target.sys.contentType.sys.id === 'engineeringProjects'
+			) {
+				return (
+					<div className={'comic comic-grid'}>
+						<div className={'comic-grid-w-super'}>
+							<ProjectCard
+								title={node.data.target.fields.title}
+								slug={node.data.target.fields.slug}
+							/>
+						</div>
+					</div>
 				);
 			}
 		},
