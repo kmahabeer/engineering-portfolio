@@ -16,7 +16,9 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className={'relative'}>
 				<Navbar />
-				<Container maxWidth={'lg'}>{children}</Container>
+				<Container maxWidth={'lg'}>
+					<div className='md:px-16 mt-8'>{children}</div>
+				</Container>
 			</body>
 		</html>
 	);
