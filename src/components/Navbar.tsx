@@ -28,7 +28,7 @@ const navbarLinks: NavbarLink[] = [
 	{
 		isEnabled: true,
 		label: 'Resume',
-		href: 'https://drive.google.com/file/d/19EI6FfAlTuPpyAP42oGtEaKpmdCJSxk6/view?usp=sharing',
+		href: 'https://drive.google.com/file/d/1ro7J4SGPBnLJ5HRgyg2eAOD_VSA1TyzQ/view?usp=sharing',
 		isExternal: true,
 	},
 	{ isEnabled: false, label: 'About', href: '/about' },
