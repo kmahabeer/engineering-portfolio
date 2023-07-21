@@ -13,7 +13,7 @@ const page = async ({ params }: { params: { slug: string } }) => {
 	return (
 		<div className='px-16 mt-8'>
 			<h1 className='text-lg text-center font-semibold'>{engPost?.title}</h1>
-			<div className='mx-auto prose sm:max-w-md md:max-w-xl lg:max-w-none'>
+			<div className='mx-auto sm:max-w-md md:max-w-xl lg:max-w-none'>
 				<div>Published Date: {engPost?.publishedDate}</div>
 				<RichText document={engPost?.content} />
 			</div>
