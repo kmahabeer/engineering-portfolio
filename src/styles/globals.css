@@ -29,7 +29,7 @@ body {
 
 /* Project Card */
 .project_card-title {
-	@apply justify-end items-end w-full h-3/4 bg-gradient-to-b from-transparent to-black/75 gap-2 absolute bottom-0 right-0 text-base text-white p-4;
+  @apply justify-end items-end w-full h-3/4 bg-gradient-to-b from-transparent to-black/75 gap-2 absolute bottom-0 right-0 text-base text-white p-4;
 }
 
 /* Projects Display */
@@ -44,31 +44,31 @@ body {
     grid-template-columns: repeat(21, 1fr);
   }
 
-	.comic-grid-w-normal {
-		grid-column: span 7;
-	}
-	.comic-grid-w-narrow {
-		grid-column: span 6;
-	}
-	.comic-grid-w-wide {
-		grid-column: span 9;
-	}
-	.comic-grid-w-superwide {
-		grid-column: span 15;
-	}
-	.comic-grid-w-super {
-		grid-column: span 14;
-	}
+  .comic-grid-w-normal {
+    grid-column: span 7;
+  }
+  .comic-grid-w-narrow {
+    grid-column: span 6;
+  }
+  .comic-grid-w-wide {
+    grid-column: span 9;
+  }
+  .comic-grid-w-superwide {
+    grid-column: span 15;
+  }
+  .comic-grid-w-super {
+    grid-column: span 14;
+  }
 
-	.comic-grid-h-normal {
-		grid-row: span 1 / auto;
-	}
-	.comic-grid-h-tall {
-		grid-row: span 2 / auto;
-	}
+  .comic-grid-h-normal {
+    grid-row: span 1 / auto;
+  }
+  .comic-grid-h-tall {
+    grid-row: span 2 / auto;
+  }
 }
 
 /* Rich text */
 .richtext {
-	@apply prose prose-neutral dark:prose-invert prose-a:text-blue-600 hover:prose-a:text-blue-500;
+  @apply prose prose-neutral dark:prose-invert prose-a:text-blue-600 hover:prose-a:text-blue-500;
 }
