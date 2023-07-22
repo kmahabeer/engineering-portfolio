@@ -1,7 +1,7 @@
 import { ProjectGallery } from '@/components';
 
 const page = async () => {
-	return <ProjectGallery />;
+  return <ProjectGallery />;
 };
 
 export default page;

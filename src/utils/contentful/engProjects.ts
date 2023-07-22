@@ -4,69 +4,69 @@ import { Document as RichTextDocument } from '@contentful/rich-text-types';
 import contentfulClient from './contentfulClient';
 
 type EngProjectEntry = Entry<
-	TypeEngineeringProjectsSkeleton,
-	undefined,
-	string
+  TypeEngineeringProjectsSkeleton,
+  undefined,
+  string
 >;
 
 export interface EngProject {
-	title: string;
-	slug: string;
-	publishedDate?: string;
-	content?: RichTextDocument;
-	thumbnail?: any;
+  title: string;
+  slug: string;
+  publishedDate?: string;
+  content?: RichTextDocument;
+  thumbnail?: any;
 }
 
 export function parseContentfulEngProject(
-	engProjectEntry?: EngProjectEntry
+  engProjectEntry?: EngProjectEntry
 ): EngProject | null {
-	if (!engProjectEntry) {
-		return null;
-	}
-	return {
-		title: engProjectEntry.fields.title || '',
-		slug: engProjectEntry.fields.slug,
-		publishedDate: engProjectEntry.fields.publishedDate,
-		content: engProjectEntry.fields.content,
-		thumbnail: engProjectEntry.fields.thumbnail,
-	};
+  if (!engProjectEntry) {
+    return null;
+  }
+  return {
+    title: engProjectEntry.fields.title || '',
+    slug: engProjectEntry.fields.slug,
+    publishedDate: engProjectEntry.fields.publishedDate,
+    content: engProjectEntry.fields.content,
+    thumbnail: engProjectEntry.fields.thumbnail,
+  };
 }
 
 interface FetchEngProjectOptions {
-	slug?: string;
-	preview: boolean;
+  slug?: string;
+  preview: boolean;
 }
 
 export async function fetchEngProjects({
-	preview,
+  preview,
 }: FetchEngProjectOptions): Promise<EngProject[]> {
-	const contentful = contentfulClient({ preview });
+  const contentful = contentfulClient({ preview });
 
-	const engProjectsResult =
-		await contentful.getEntries<TypeEngineeringProjectsSkeleton>({
-			content_type: 'engineeringProjects',
-			include: 2,
-			order: ['fields.title'],
-		});
+  const engProjectsResult =
+    await contentful.getEntries<TypeEngineeringProjectsSkeleton>({
+      content_type: 'engineeringProjects',
+      include: 2,
+      order: ['fields.title'],
+    });
 
-	return engProjectsResult.items.map(
-		(EngProjectEntry) =>
-			parseContentfulEngProject(EngProjectEntry) as EngProject
-	);
+  return engProjectsResult.items.map(
+    (EngProjectEntry) =>
+      parseContentfulEngProject(EngProjectEntry) as EngProject
+  );
 }
 
 export async function fetchEngProject({
-	slug,
-	preview,
+  slug,
+  preview,
 }: FetchEngProjectOptions): Promise<EngProject | null> {
-	const contentful = contentfulClient({ preview });
+  const contentful = contentfulClient({ preview });
 
-	const engProjectsResult =
-		await contentful.getEntries<TypeEngineeringProjectsSkeleton>({
-			content_type: 'engineeringProjects',
-			'fields.slug': slug,
-			include: 2,
-		});
+  const engProjectsResult =
+    await contentful.getEntries<TypeEngineeringProjectsSkeleton>({
+      content_type: 'engineeringProjects',
+      'fields.slug': slug,
+      include: 2,
+    });
 
-	return parseContentfulEngProject(engProjectsResult.items[0]);
+  return parseContentfulEngProject(engProjectsResult.items[0]);
 }

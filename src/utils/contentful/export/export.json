@@ -57,8 +57,7 @@
           "type": "Symbol",
           "localized": true,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -88,8 +87,7 @@
           "type": "Date",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -99,8 +97,7 @@
           "type": "Object",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -145,8 +142,7 @@
               "message": "Only heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, inline entry, heading 2, and heading 1 nodes are allowed"
             },
             {
-              "nodes": {
-              }
+              "nodes": {}
             }
           ],
           "disabled": false,
@@ -158,17 +154,14 @@
           "type": "Array",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false,
           "items": {
             "type": "Link",
             "validations": [
               {
-                "linkContentType": [
-                  "tag"
-                ]
+                "linkContentType": ["tag"]
               }
             ],
             "linkType": "Entry"
@@ -182,9 +175,7 @@
           "required": false,
           "validations": [
             {
-              "linkContentType": [
-                "seo"
-              ]
+              "linkContentType": ["seo"]
             }
           ],
           "disabled": false,
@@ -250,8 +241,7 @@
           "type": "Symbol",
           "localized": true,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -281,8 +271,7 @@
           "type": "Date",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -325,8 +314,7 @@
               "message": "Only heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
             },
             {
-              "nodes": {
-              }
+              "nodes": {}
             }
           ],
           "disabled": false,
@@ -338,17 +326,14 @@
           "type": "Array",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false,
           "items": {
             "type": "Link",
             "validations": [
               {
-                "linkContentType": [
-                  "tag"
-                ]
+                "linkContentType": ["tag"]
               }
             ],
             "linkType": "Entry"
@@ -362,9 +347,7 @@
           "required": false,
           "validations": [
             {
-              "linkContentType": [
-                "seo"
-              ]
+              "linkContentType": ["seo"]
             }
           ],
           "disabled": false,
@@ -430,8 +413,7 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -441,8 +423,7 @@
           "type": "Text",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -452,8 +433,7 @@
           "type": "Symbol",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         }
@@ -516,8 +496,7 @@
           "type": "Symbol",
           "localized": true,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -547,8 +526,7 @@
           "type": "Date",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -591,8 +569,7 @@
               "message": "Only heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
             },
             {
-              "nodes": {
-              }
+              "nodes": {}
             }
           ],
           "disabled": false,
@@ -604,17 +581,14 @@
           "type": "Array",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false,
           "items": {
             "type": "Link",
             "validations": [
               {
-                "linkContentType": [
-                  "tag"
-                ]
+                "linkContentType": ["tag"]
               }
             ],
             "linkType": "Entry"
@@ -628,9 +602,7 @@
           "required": false,
           "validations": [
             {
-              "linkContentType": [
-                "seo"
-              ]
+              "linkContentType": ["seo"]
             }
           ],
           "disabled": false,
@@ -696,8 +668,7 @@
           "type": "Symbol",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         }
@@ -760,8 +731,7 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -771,8 +741,7 @@
           "type": "Text",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -782,16 +751,14 @@
           "type": "Object",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         }
       ]
     }
   ],
-  "tags": [
-  ],
+  "tags": [],
   "editorInterfaces": [
     {
       "sys": {
@@ -852,26 +819,22 @@
       ],
       "sidebar": [
         {
-          "settings": {
-          },
+          "settings": {},
           "widgetId": "publication-widget",
           "widgetNamespace": "sidebar-builtin"
         },
         {
-          "settings": {
-          },
+          "settings": {},
           "widgetId": "content-preview-widget",
           "widgetNamespace": "sidebar-builtin"
         },
         {
-          "settings": {
-          },
+          "settings": {},
           "widgetId": "66frtrAqmWSowDJzQNDiD",
           "widgetNamespace": "app"
         },
         {
-          "settings": {
-          },
+          "settings": {},
           "widgetId": "703nAvCC2nuDjQCiI5P8e2",
           "widgetNamespace": "app"
         }
@@ -985,14 +948,12 @@
           "widgetNamespace": "sidebar-builtin"
         },
         {
-          "settings": {
-          },
+          "settings": {},
           "widgetId": "66frtrAqmWSowDJzQNDiD",
           "widgetNamespace": "app"
         },
         {
-          "settings": {
-          },
+          "settings": {},
           "widgetId": "703nAvCC2nuDjQCiI5P8e2",
           "widgetNamespace": "app"
         }
@@ -1194,14 +1155,12 @@
           "widgetNamespace": "sidebar-builtin"
         },
         {
-          "settings": {
-          },
+          "settings": {},
           "widgetId": "66frtrAqmWSowDJzQNDiD",
           "widgetNamespace": "app"
         },
         {
-          "settings": {
-          },
+          "settings": {},
           "widgetId": "703nAvCC2nuDjQCiI5P8e2",
           "widgetNamespace": "app"
         }
@@ -1371,38 +1330,32 @@
       },
       "sidebar": [
         {
-          "settings": {
-          },
+          "settings": {},
           "widgetId": "703nAvCC2nuDjQCiI5P8e2",
           "widgetNamespace": "app"
         },
         {
-          "settings": {
-          },
+          "settings": {},
           "widgetId": "publication-widget",
           "widgetNamespace": "sidebar-builtin"
         },
         {
-          "settings": {
-          },
+          "settings": {},
           "widgetId": "content-preview-widget",
           "widgetNamespace": "sidebar-builtin"
         },
         {
-          "settings": {
-          },
+          "settings": {},
           "widgetId": "incoming-links-widget",
           "widgetNamespace": "sidebar-builtin"
         },
         {
-          "settings": {
-          },
+          "settings": {},
           "widgetId": "translation-widget",
           "widgetNamespace": "sidebar-builtin"
         },
         {
-          "settings": {
-          },
+          "settings": {},
           "widgetId": "versions-widget",
           "widgetNamespace": "sidebar-builtin"
         }
@@ -1429,8 +1382,7 @@
   "entries": [
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1477,8 +1429,7 @@
             "id": "6yiIHt2oEgghnxx1BqH8QG"
           }
         },
-        "automationTags": [
-        ],
+        "automationTags": [],
         "contentType": {
           "sys": {
             "type": "Link",
@@ -1499,18 +1450,14 @@
         },
         "content": {
           "en-US": {
-            "data": {
-            },
+            "data": {},
             "content": [
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Paulum, cum regem Persem captum adduceret, eodem flumine invectio? Superiores tres erant, quae esse possent, quarum est una sola defensa, eaque vehementer. Nam illud vehementer repugnat, eundem beatum esse et multis malis oppressum. Simul atque natum animal est, gaudet voluptate et eam appetit ut bonum, aspernatur dolorem ut malum. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit;",
                     "nodeType": "text"
                   }
@@ -1518,14 +1465,11 @@
                 "nodeType": "paragraph"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "",
                     "nodeType": "text"
                   },
@@ -1535,10 +1479,8 @@
                     },
                     "content": [
                       {
-                        "data": {
-                        },
-                        "marks": [
-                        ],
+                        "data": {},
+                        "marks": [],
                         "value": "Google",
                         "nodeType": "text"
                       }
@@ -1546,10 +1488,8 @@
                     "nodeType": "hyperlink"
                   },
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "",
                     "nodeType": "text"
                   }
@@ -1557,14 +1497,11 @@
                 "nodeType": "paragraph"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "This is where an image will go:",
                     "nodeType": "text"
                   }
@@ -1581,8 +1518,7 @@
                     }
                   }
                 },
-                "content": [
-                ],
+                "content": [],
                 "nodeType": "embedded-entry-block"
               },
               {
@@ -1595,26 +1531,20 @@
                     }
                   }
                 },
-                "content": [
-                ],
+                "content": [],
                 "nodeType": "embedded-entry-block"
               },
               {
-                "data": {
-                },
-                "content": [
-                ],
+                "data": {},
+                "content": [],
                 "nodeType": "hr"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "This is a heading 2",
                     "nodeType": "text"
                   }
@@ -1622,14 +1552,11 @@
                 "nodeType": "heading-2"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Duo Reges: constructio interrete. Bonum liberi: misera orbitas. At enim, qua in vita est aliquid mali, ea beata esse non potest. Itaque ad tempus ad Pisonem omnes. Quis est tam dissimile homini.",
                     "nodeType": "text"
                   }
@@ -1637,14 +1564,11 @@
                 "nodeType": "paragraph"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "This is a heading 3",
                     "nodeType": "text"
                   }
@@ -1652,14 +1576,11 @@
                 "nodeType": "heading-3"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Inline entry to a tag using embed: ",
                     "nodeType": "text"
                   },
@@ -1673,15 +1594,12 @@
                         }
                       }
                     },
-                    "content": [
-                    ],
+                    "content": [],
                     "nodeType": "embedded-entry-inline"
                   },
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "",
                     "nodeType": "text"
                   }
@@ -1689,14 +1607,11 @@
                 "nodeType": "paragraph"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Inline entry to a project using embed: ",
                     "nodeType": "text"
                   },
@@ -1710,15 +1625,12 @@
                         }
                       }
                     },
-                    "content": [
-                    ],
+                    "content": [],
                     "nodeType": "embedded-entry-inline"
                   },
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "",
                     "nodeType": "text"
                   }
@@ -1726,14 +1638,11 @@
                 "nodeType": "paragraph"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "This is a heading 3",
                     "nodeType": "text"
                   }
@@ -1741,14 +1650,11 @@
                 "nodeType": "heading-3"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Inline entry to a tag using hyperlink: ",
                     "nodeType": "text"
                   },
@@ -1764,10 +1670,8 @@
                     },
                     "content": [
                       {
-                        "data": {
-                        },
-                        "marks": [
-                        ],
+                        "data": {},
+                        "marks": [],
                         "value": "Python",
                         "nodeType": "text"
                       }
@@ -1775,10 +1679,8 @@
                     "nodeType": "entry-hyperlink"
                   },
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "",
                     "nodeType": "text"
                   }
@@ -1786,14 +1688,11 @@
                 "nodeType": "paragraph"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Inline entry to a project using hyperlink: ",
                     "nodeType": "text"
                   },
@@ -1809,10 +1708,8 @@
                     },
                     "content": [
                       {
-                        "data": {
-                        },
-                        "marks": [
-                        ],
+                        "data": {},
+                        "marks": [],
                         "value": "Second engineering post",
                         "nodeType": "text"
                       }
@@ -1820,10 +1717,8 @@
                     "nodeType": "entry-hyperlink"
                   },
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": " (Works)",
                     "nodeType": "text"
                   }
@@ -1831,14 +1726,11 @@
                 "nodeType": "paragraph"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "This is a heading 2",
                     "nodeType": "text"
                   }
@@ -1846,14 +1738,11 @@
                 "nodeType": "heading-2"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "The following is code:",
                     "nodeType": "text"
                   }
@@ -1861,12 +1750,10 @@
                 "nodeType": "paragraph"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
+                    "data": {},
                     "marks": [
                       {
                         "type": "code"
@@ -1879,18 +1766,14 @@
                 "nodeType": "paragraph"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
+                    "data": {},
                     "content": [
                       {
-                        "data": {
-                        },
-                        "marks": [
-                        ],
+                        "data": {},
+                        "marks": [],
                         "value": "\n\tQuod idem cum vestri faciant, non satis magnam tribuunt inventoribus gratiam.\n",
                         "nodeType": "text"
                       }
@@ -1901,14 +1784,11 @@
                 "nodeType": "blockquote"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "This is a heading 3",
                     "nodeType": "text"
                   }
@@ -1916,22 +1796,17 @@
                 "nodeType": "heading-3"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
+                    "data": {},
                     "content": [
                       {
-                        "data": {
-                        },
+                        "data": {},
                         "content": [
                           {
-                            "data": {
-                            },
-                            "marks": [
-                            ],
+                            "data": {},
+                            "marks": [],
                             "value": "An potest, inquit ille, quicquam esse suavius quam nihil dolere?",
                             "nodeType": "text"
                           }
@@ -1942,18 +1817,14 @@
                     "nodeType": "list-item"
                   },
                   {
-                    "data": {
-                    },
+                    "data": {},
                     "content": [
                       {
-                        "data": {
-                        },
+                        "data": {},
                         "content": [
                           {
-                            "data": {
-                            },
-                            "marks": [
-                            ],
+                            "data": {},
+                            "marks": [],
                             "value": "At vero illa, quae Peripatetici, quae Stoici dicunt, semper tibi in ore sunt in iudiciis, in senatu.",
                             "nodeType": "text"
                           }
@@ -1967,12 +1838,10 @@
                 "nodeType": "unordered-list"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
+                    "data": {},
                     "marks": [
                       {
                         "type": "bold"
@@ -1982,16 +1851,13 @@
                     "nodeType": "text"
                   },
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": ", ",
                     "nodeType": "text"
                   },
                   {
-                    "data": {
-                    },
+                    "data": {},
                     "marks": [
                       {
                         "type": "italic"
@@ -2001,16 +1867,13 @@
                     "nodeType": "text"
                   },
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": ", ",
                     "nodeType": "text"
                   },
                   {
-                    "data": {
-                    },
+                    "data": {},
                     "marks": [
                       {
                         "type": "underline"
@@ -2020,10 +1883,8 @@
                     "nodeType": "text"
                   },
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": ", quod summum bonum dicitis, ecquaenam possit fieri accessio. Cur igitur, cum de re conveniat, non malumus usitate loqui? Nondum autem explanatum satis, erat, quid maxime natura vellet. Bonum incolumis acies: misera caecitas.",
                     "nodeType": "text"
                   }
@@ -2040,19 +1901,15 @@
                     }
                   }
                 },
-                "content": [
-                ],
+                "content": [],
                 "nodeType": "embedded-entry-block"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "This is a heading 3",
                     "nodeType": "text"
                   }
@@ -2060,14 +1917,11 @@
                 "nodeType": "heading-3"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Ego vero isti, inquam, permitto. Quae diligentissime contra Aristonem dicuntur a Chryippo. Ille vero, si insipiens-quo certe, quoniam tyrannus -, numquam beatus; Immo alio genere;",
                     "nodeType": "text"
                   }
@@ -2075,14 +1929,11 @@
                 "nodeType": "paragraph"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "This is a heading 2",
                     "nodeType": "text"
                   }
@@ -2090,14 +1941,11 @@
                 "nodeType": "heading-2"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Other entries to check out:",
                     "nodeType": "text"
                   }
@@ -2114,19 +1962,15 @@
                     }
                   }
                 },
-                "content": [
-                ],
+                "content": [],
                 "nodeType": "embedded-entry-block"
               },
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "",
                     "nodeType": "text"
                   }
@@ -2141,8 +1985,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2189,8 +2032,7 @@
             "id": "6yiIHt2oEgghnxx1BqH8QG"
           }
         },
-        "automationTags": [
-        ],
+        "automationTags": [],
         "contentType": {
           "sys": {
             "type": "Link",
@@ -2210,8 +2052,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2258,8 +2099,7 @@
             "id": "6yiIHt2oEgghnxx1BqH8QG"
           }
         },
-        "automationTags": [
-        ],
+        "automationTags": [],
         "contentType": {
           "sys": {
             "type": "Link",
@@ -2276,8 +2116,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2324,8 +2163,7 @@
             "id": "6yiIHt2oEgghnxx1BqH8QG"
           }
         },
-        "automationTags": [
-        ],
+        "automationTags": [],
         "contentType": {
           "sys": {
             "type": "Link",
@@ -2346,18 +2184,14 @@
         },
         "content": {
           "en-US": {
-            "data": {
-            },
+            "data": {},
             "content": [
               {
-                "data": {
-                },
+                "data": {},
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "data": {},
+                    "marks": [],
                     "value": "Ain't that something?",
                     "nodeType": "text"
                   }
@@ -2383,8 +2217,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2431,8 +2264,7 @@
             "id": "6yiIHt2oEgghnxx1BqH8QG"
           }
         },
-        "automationTags": [
-        ],
+        "automationTags": [],
         "contentType": {
           "sys": {
             "type": "Link",
@@ -2452,8 +2284,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2500,8 +2331,7 @@
             "id": "6yiIHt2oEgghnxx1BqH8QG"
           }
         },
-        "automationTags": [
-        ],
+        "automationTags": [],
         "contentType": {
           "sys": {
             "type": "Link",
@@ -2518,8 +2348,7 @@
           "en-US": [
             {
               "url": "http://res.cloudinary.com/dnvopdrgi/image/upload/f_auto/q_auto:best/v1682710250/samples/landscapes/architecture-signs.jpg",
-              "tags": [
-              ],
+              "tags": [],
               "type": "upload",
               "bytes": 945255,
               "width": 3000,
@@ -2527,8 +2356,7 @@
               "height": 2000,
               "version": 1682710250,
               "duration": null,
-              "metadata": [
-              ],
+              "metadata": [],
               "public_id": "samples/landscapes/architecture-signs",
               "created_at": "2023-04-28T19:30:50Z",
               "secure_url": "https://res.cloudinary.com/dnvopdrgi/image/upload/f_auto/q_auto:best/v1682710250/samples/landscapes/architecture-signs.jpg",
@@ -2543,8 +2371,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -2591,8 +2418,7 @@
             "id": "6yiIHt2oEgghnxx1BqH8QG"
           }
         },
-        "automationTags": [
-        ],
+        "automationTags": [],
         "contentType": {
           "sys": {
             "type": "Link",
@@ -2609,8 +2435,7 @@
           "en-US": [
             {
               "url": "http://res.cloudinary.com/dnvopdrgi/image/upload/f_auto/q_auto:best/v1682710268/cld-sample-4.jpg",
-              "tags": [
-              ],
+              "tags": [],
               "type": "upload",
               "bytes": 818600,
               "width": 1870,
@@ -2618,8 +2443,7 @@
               "height": 1250,
               "version": 1682710268,
               "duration": null,
-              "metadata": [
-              ],
+              "metadata": [],
               "public_id": "cld-sample-4",
               "created_at": "2023-04-28T19:31:08Z",
               "secure_url": "https://res.cloudinary.com/dnvopdrgi/image/upload/f_auto/q_auto:best/v1682710268/cld-sample-4.jpg",
@@ -2633,8 +2457,7 @@
       }
     }
   ],
-  "assets": [
-  ],
+  "assets": [],
   "locales": [
     {
       "name": "English (United States)",
@@ -2682,8 +2505,7 @@
       }
     }
   ],
-  "webhooks": [
-  ],
+  "webhooks": [],
   "roles": [
     {
       "name": "Author",
@@ -2691,9 +2513,7 @@
       "policies": [
         {
           "effect": "allow",
-          "actions": [
-            "create"
-          ],
+          "actions": ["create"],
           "constraint": {
             "and": [
               {
@@ -2709,9 +2529,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "read"
-          ],
+          "actions": ["read"],
           "constraint": {
             "and": [
               {
@@ -2727,9 +2545,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "update"
-          ],
+          "actions": ["update"],
           "constraint": {
             "and": [
               {
@@ -2745,9 +2561,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "create"
-          ],
+          "actions": ["create"],
           "constraint": {
             "and": [
               {
@@ -2763,9 +2577,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "read"
-          ],
+          "actions": ["read"],
           "constraint": {
             "and": [
               {
@@ -2781,9 +2593,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "update"
-          ],
+          "actions": ["update"],
           "constraint": {
             "and": [
               {
@@ -2799,19 +2609,12 @@
         }
       ],
       "permissions": {
-        "ContentModel": [
-          "read"
-        ],
-        "Settings": [
-        ],
-        "ContentDelivery": [
-        ],
-        "Environments": [
-        ],
-        "EnvironmentAliases": [
-        ],
-        "Tags": [
-        ]
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
       },
       "sys": {
         "type": "Role",
@@ -2880,19 +2683,12 @@
         }
       ],
       "permissions": {
-        "ContentModel": [
-          "read"
-        ],
-        "Settings": [
-        ],
-        "ContentDelivery": [
-        ],
-        "Environments": [
-        ],
-        "EnvironmentAliases": [
-        ],
-        "Tags": [
-        ]
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
       },
       "sys": {
         "type": "Role",
@@ -2929,9 +2725,7 @@
       "policies": [
         {
           "effect": "allow",
-          "actions": [
-            "read"
-          ],
+          "actions": ["read"],
           "constraint": {
             "and": [
               {
@@ -2947,9 +2741,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "read"
-          ],
+          "actions": ["read"],
           "constraint": {
             "and": [
               {
@@ -2965,9 +2757,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "update"
-          ],
+          "actions": ["update"],
           "constraint": {
             "and": [
               {
@@ -2990,9 +2780,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "update"
-          ],
+          "actions": ["update"],
           "constraint": {
             "and": [
               {
@@ -3015,19 +2803,12 @@
         }
       ],
       "permissions": {
-        "ContentModel": [
-          "read"
-        ],
-        "Settings": [
-        ],
-        "ContentDelivery": [
-        ],
-        "Environments": [
-        ],
-        "EnvironmentAliases": [
-        ],
-        "Tags": [
-        ]
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
       },
       "sys": {
         "type": "Role",
