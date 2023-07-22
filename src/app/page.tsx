@@ -1,10 +1,7 @@
-import { Box, Card, Container, Typography } from '@mui/material';
-
 export default function Home() {
 	return (
 		<main>
-			<div className='px-16 mt-8'>
-				<div className='richtext mx-auto sm:max-w-md md:max-w-xl lg:max-w-none'>
+				<div className='richtext mx-auto md:max-w-xl lg:max-w-none'>
 					<h2 className={'font-bold'}>Welcome to my portfolio!</h2>
 					<p>
 						My name is Kevin Mahabeer. I&apos;m an Electrical Engineering
@@ -60,7 +57,6 @@ export default function Home() {
 						</li>
 					</ul>
 				</div>
-			</div>
 		</main>
 	);
 }
