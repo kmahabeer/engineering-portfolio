@@ -65,9 +65,8 @@ const options = {
           <CloudinaryImage
             alt={'some image'}
             src={node.data.target.fields.cloudinaryImage[0].url.toString()}
-            width={1280}
-            height={720}
-            crop="thumb"
+            width={640}
+            height={480}
             format="webp"
           />
         );
